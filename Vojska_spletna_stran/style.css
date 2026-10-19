@@ -1,0 +1,295 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #111;
+    background-color: white;
+}
+
+header {
+    height: 91px;
+    background-color: #444708;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+header p {
+    font-size: 16px;
+}
+
+header h1 {
+    font-family: Georgia, serif;
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 1.05;
+    color: white;
+    text-shadow: 2px 2px #999;
+}
+
+.zastava {
+    font-size: 48px;
+}
+
+nav {
+    height: 106px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    border: 3px solid black;
+    outline: 2px solid #b8a54a;
+    background-color: #414824;
+    color: white;
+    text-align: center;
+    padding: 8px 12px;
+}
+
+.logo h2 {
+    font-size: 20px;
+}
+
+.logo span {
+    display: block;
+    color: black;
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.ikone {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    color: #666;
+}
+
+.ikone span {
+    font-size: 34px;
+    position: relative;
+}
+
+.ikone sup {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #666;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 3px 6px;
+}
+
+main {
+    max-width: 760px;
+    margin: 0 auto 14px;
+}
+
+main h3 {
+    border-top: 1px solid #ccc;
+    text-align: center;
+    padding: 3px;
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+
+.izdelki {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+}
+
+.izdelek {
+    height: 299px;
+    border: 1px solid #d5d5d5;
+    padding: 7px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.izdelek img {
+    width: 100%;
+    height: 176px;
+    object-fit: contain;
+    margin-bottom: 4px;
+}
+
+.izdelek p {
+    font-size: 9px;
+    line-height: 1.5;
+    min-height: 48px;
+}
+
+.izdelek strong {
+    font-size: 9px;
+    margin-top: 4px;
+}
+
+.oznaka {
+    position: absolute;
+    right: 5px;
+    top: 6px;
+    background-color: #3d5008;
+    color: white;
+    font-size: 8px;
+    padding: 3px 6px;
+}
+
+.sale {
+    background-color: #c94348;
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 8px 10px 4px;
+    color: #777;
+    font-size: 9px;
+}
+
+.novice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 16px;
+}
+
+.novice h4 {
+    color: #38411c;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.novice form {
+    display: flex;
+    width: 40%;
+}
+
+.novice input {
+    width: 70%;
+    border: none;
+    padding: 8px;
+    font-size: 9px;
+}
+
+.novice button {
+    width: 30%;
+    border: none;
+    background-color: #493b0d;
+    color: white;
+    font-size: 9px;
+    font-weight: bold;
+    padding: 8px 4px;
+}
+
+.footer-vsebina {
+    display: grid;
+    grid-template-columns: 2fr repeat(4, 0.85fr);
+    gap: 18px;
+    margin-bottom: 24px;
+}
+
+.footer-vsebina h4 {
+    color: #38411c;
+    font-size: 11px;
+    margin-bottom: 8px;
+}
+
+.footer-vsebina p {
+    margin-bottom: 5px;
+}
+
+.mali-logo {
+    display: inline-block;
+    background-color: #414824;
+    color: white !important;
+    border: 2px solid #b8a54a;
+    padding: 5px;
+    font-size: 10px !important;
+}
+
+.naslov,
+.copyright {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 9px;
+}
+
+@media (max-width: 650px) {
+    header {
+        height: auto;
+        min-height: 90px;
+        padding: 12px 8px;
+        gap: 8px;
+    }
+
+    header p {
+        font-size: 10px;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    .zastava {
+        font-size: 28px;
+    }
+
+    nav {
+        height: 90px;
+        padding: 12px;
+    }
+
+    .logo h2 {
+        font-size: 13px;
+    }
+
+    .ikone {
+        gap: 12px;
+    }
+
+    .ikone span {
+        font-size: 24px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    .izdelki {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .izdelek {
+        height: 290px;
+    }
+
+    .izdelek img {
+        height: 175px;
+    }
+
+    .novice {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .novice form {
+        width: 100%;
+    }
+
+    .footer-vsebina {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
